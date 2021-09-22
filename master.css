@@ -11,6 +11,7 @@
 
 body {
   font-family: Lato Helvita serif;
+  overflow-x: hidden;
 }
 
 section {
@@ -34,11 +35,10 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  background: #ffffff;
+  background: transparent;
   color: #250c0c;
   padding: 20px;
-  z-index: 1;
+  z-index: 100;
   -webkit-user-select: none;
   user-select: none;
   box-sizing: border-box;
@@ -269,6 +269,10 @@ a {
 
 /* Home Hero End */
 /*-- Home upcoming events start --*/
+.event-upcoming-events {
+  padding: 20px 0;
+}
+
 .home-upcoming-events {
   min-height: 400px;
 }
@@ -370,6 +374,36 @@ a {
 }
 
 .footer {
-  padding: 80px 0;
-  background-color: #202020;
+  height: 50px;
+  color: #242424;
+}
+
+.footer .foo-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: auto;
+  align-content: start;
+}
+
+.socials-links li {
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-size: 34px;
+}
+
+.college {
+  padding: 20px;
+}
+
+.socials-links li a {
+  color: var(--primary-color);
+}
+
+.credits {
+  text-align: center;
+  padding: 20px;
 }

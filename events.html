@@ -11,86 +11,123 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="master.css">
-  <link rel="stylesheet" href="events.css">
+  <!-- <link rel="stylesheet" href="events.css"> -->
 </head>
 
 <body>
   <!-- Navbar Start -->
-  <nav>
-    <div class="nav-left">
-      <a href="#"><img src="#" alt="Logo"></a>
-    </div>
-    <div class="nav-right">
+  <nav class="menu-container"> <input type="checkbox" aria-label="Toggle menu" /> <span></span> <span></span> <span></span> <a href="#" class="menu-logo"> <img src="images/logo.png" alt="" /> </a>
+    <div class="menu">
+      <ul></ul>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
+        <li> <a href=""> Home </a></li>
+        <li> <a href=""> About </a></li>
+        <li> <a href=""> Team </a></li>
+        <li> <a href=""> Events </a></li>
+        <li> <a href=""> Contact </a></li>
       </ul>
     </div>
   </nav>
   <!-- Navbar End -->
 
   <!---EVENTS-START-->
- <div class="container">
-   <div class="card"><!--1-->
-     <div class="image">
-       <img src="digital marketing.PNG" alt="digital marketing" >
-     </div>
-     <div class="text">
-       <h2>DIGITAL MARKETING WEBINAR</h2>
-       <h3>2nd July ,4pm</h3>
-       <p>Introducing Webinar on Digital Marketing - in other words, any form of marketing that exists online.</p>
+  <section class='event-upcoming-events'>
+    <h1 class='announce'>Upcoming Events</h1>
+    <div class="container">
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image front-one">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Exploring around</h2>
+            <p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image front-two">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">A new trail you can't miss</h2>
+            <p class="card-intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image front-three">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Inside the Outdoors</h2>
+            <p class="card-intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Previous -->
 
-     </div>
-   </div>
-   <div class="card"><!--2-->
-    <div class="image">
-      <img src="python_logo.jpg" alt="python logo" height="230px" >
-    </div>
-    <div class="text">
-      <h2>PYTHON SESSION #2</h2>
-      <h3>Saturday, 6pm</h3>
-      <p>Get engaged with us with the second session of python. Get grooming and hands on with python!!!<br>See u there at 6pm.</p>
+  <section class='event-upcoming-events'>
+    <h1 class='announce'>Previous Events</h1>
+    <div class="container">
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image front-one">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Exploring around</h2>
+            <p class="card-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image front-two">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">A new trail you can't miss</h2>
+            <p class="card-intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image front-three">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Inside the Outdoors</h2>
+            <p class="card-intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          </div>
+        </div>
+      </div>
 
-    </div>
-  </div>
-  <div class="card"><!--3-->
-    <div class="image">
-      <img src="solid.jpg" alt="solidworks" height="230px">
-    </div>
-    <div class="text">
-      <h2>SOLID WORKS SESSION</h2>
-      
-      <p>Get engaged with us with the first ever session of solidworks. Get grooming and hands on with solidworks!!!</p>
 
-    </div>
-  </div>
-   
- </div>
- 
+  </section>
+
   <!--EVENTS-END-->
 
   <header>
 
   </header>
 
-  <footer>
-    <div class="social-icons">
-      <i class="fab fa-instagram" style='color: black'></i>
-      <i class="fab fa-linkedin" style='color: black'></i>
-      <i class="fab fa-youtube" style='color: black'></i>
-      <i class="fab fa-github" style='color: black'></i>
-      <i class="fab fa-discord" style='color: black'></i>
+  <footer class='footer'>
+    <div class="foo-container">
+      <div class="socials-links">
+        <ul>
+          <li><a href="#"><i class='fab fa-instagram'></i></a></li>
+          <li><a href="#"><i class='fab fa-discord'></i></a></li>
+          <li><a href="#"><i class='fab fa-youtube'></i></a></li>
+          <li><a href="#"><i class='fab fa-github'></i></a></li>
+        </ul>
+      </div>
+      <div class="college">
+        <h3>Modern Education Society's College of Engineering</h3>
+      </div>
     </div>
-    <div class="footer-right">
-      <h3>Modern Education Society's College of Engineering</h3>
-    </div>
-
-    <div class="center">
-      Designed and Developed with <i class="fab fa-heart"></i> by Designers Club.
-      &copy; All rights Reserved
+    <div class="credits">
+      <p>Designed with &#10084;&#65039; by Designers Club</p>
     </div>
   </footer>
 

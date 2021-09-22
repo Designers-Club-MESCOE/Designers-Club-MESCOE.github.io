@@ -15,41 +15,69 @@
 
 <body>
   <!-- Navbar Start -->
-  <nav>
-    <div class="nav-left">
-      <a href="#"><img src="#" alt="Logo"></a>
-    </div>
-    <div class="nav-right">
+  <nav class="menu-container"> <input type="checkbox" aria-label="Toggle menu" /> <span></span> <span></span> <span></span> <a href="#" class="menu-logo"> <img src="images/logo.png" alt="" /> </a>
+    <div class="menu">
+      <ul></ul>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
+        <li> <a href=""> Home </a></li>
+        <li> <a href=""> About </a></li>
+        <li> <a href=""> Team </a></li>
+        <li> <a href=""> Events </a></li>
+        <li> <a href=""> Contact </a></li>
       </ul>
     </div>
   </nav>
   <!-- Navbar End -->
 
   <header>
+    <div class="mapouter">
+      <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          src="https://maps.google.com/maps?width=700&amp;height=475&amp;hl=en&amp;q=mescoe&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.fnfgo.com/">FNF Online</a></div>
+      <style>
+        .mapouter {
+          position: relative;
+          text-align: right;
+          width: 100%;
+          height: 475px;
+        }
 
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          width: 100%;
+          height: 475px;
+        }
+
+        .gmap_iframe {
+          height: 475px !important;
+        }
+      </style>
+    </div>
+
+    <form class="" action="index.html" method="post">
+      <input type="text" name="" value="" placeholder="Name">
+      <input type="email" name="" value="" placeholder="Email">
+      <input type="number" name="" value="" placeholder="Number">
+      <input type="message" name="" value="" placeholder="Message">
+    </form>
   </header>
 
-  <footer>
-    <div class="social-icons">
-      <i class="fab fa-instagram" style='color: black'></i>
-      <i class="fab fa-linkedin" style='color: black'></i>
-      <i class="fab fa-youtube" style='color: black'></i>
-      <i class="fab fa-github" style='color: black'></i>
-      <i class="fab fa-discord" style='color: black'></i>
+  <footer class='footer'>
+    <div class="foo-container">
+      <div class="socials-links">
+        <ul>
+          <li><a href="#"><i class='fab fa-instagram'></i></a></li>
+          <li><a href="#"><i class='fab fa-discord'></i></a></li>
+          <li><a href="#"><i class='fab fa-youtube'></i></a></li>
+          <li><a href="#"><i class='fab fa-github'></i></a></li>
+        </ul>
+      </div>
+      <div class="college">
+        <h3>Modern Education Society's College of Engineering</h3>
+      </div>
     </div>
-    <div class="footer-right">
-      <h3>Modern Education Society's College of Engineering</h3>
-    </div>
-
-    <div class="center">
-      Designed and Developed with <i class="fab fa-heart"></i> by Designers Club.
-      &copy; All rights Reserved
+    <div class="credits">
+      <p>Designed with &#10084;&#65039; by Designers Club</p>
     </div>
   </footer>
 
