@@ -295,12 +295,11 @@ nav ul li a:hover{
     border-radius: 10px;
     border: 1px solid rgba(255,255,255, 0.15);
     position: relative;
-    transition: 1s;
-    cursor: pointer;
-   
+    transition: 1s ease-in-out; 
 }
 .event-row .event-col:hover{
-    transform: scale(0.9) ;
+    transform: scale(0.9);
+    cursor: pointer; 
 }
 .event-row .event-col h2{
     font-size: 18px;
@@ -367,8 +366,10 @@ nav ul li a:hover{
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 20px 30px 70px rgba(0,0,0, 0.15);
     backdrop-filter: blur(7px);
-    padding: 30px;
+    padding: 40px;
     border-radius: 10px;
+    border-left: 1px solid rgba(255,255,255, 0.2);
+    border-top: 1px solid rgba(255,255,255, 0.2);
 }
 .about-row .about-col{
     flex-basis: 50%;
@@ -441,6 +442,9 @@ nav ul li a:hover{
     font-size: 15px;
     color: var(--textcolor);
 }
+.fa-arrow-right{
+    padding-left: 10px;
+}
 @media (max-width:900px){
     .about-row{
         flex-direction: column-reverse;
@@ -488,108 +492,62 @@ nav ul li a:hover{
     color: var(--textcolor);
     margin-bottom: 20px;
 }
-.team a{
-    margin-left: 930px;
-    text-decoration: none;
-    color: var(--grey);
-    transition: 0.8s;
-    background: linear-gradient(135deg, var(--grey),var(--cyan));
-    padding: 8px 10px;
-    color: white;
-    border-radius: 10px;
-    font-size: 14px;
-}
-.team a:hover{
-    color: var(--textcolor);
-}
-.fa-arrow-right{
-    color:rgb(228, 222, 222);
-    margin-left: 5px;
-}
 .team-row{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    align-items: center;
+    margin-top: 60px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 30px 70px rgba(0,0,0, 0.15);
+    backdrop-filter: blur(7px);
+    border-right: 1px solid rgba(255,255,255, 0.2);
+    border-top: 1px solid rgba(255,255,255, 0.2);
 }
 .team-row .team-col{
-    flex-basis: 28%;
-    overflow: hidden;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    margin-right: 10px;
+    flex-basis: 50%;
 }
-.team-row .team-col .card{
-    height: 260px;
-    width: 260px;
-    margin: 0 10px;
-    perspective: 1000px;
+.team-row .team-col img{
+    width: 400px;
+    transition:1s ;
+}
+.team-row .team-col img:hover{
     cursor: pointer;
+    transform: scale(0.9) rotate(-15deg);
 }
-.team-row .team-col .card .innerbox{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    border-radius: 10px;
-    transition: transform 1s;
-    transform-style: preserve-3d;
+.team-row .team-col h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-right: 50px;
 }
-.team-row .team-col .back-face,
-.team-row .team-col .front-face{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.team-row .team-col a{
+    text-decoration: none;
+    color: var(--grey);
+    border: 1px solid var(--grey);
+    transition: 0.8s;
+    background: linear-gradient(135deg, var(--grey),var(--cyan));
+    padding: 10px 35px;
+    color: white;
     border-radius: 10px;
-    backface-visibility: hidden;
-    overflow: hidden;
-    border-radius: 10px;
-    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 1s;
 }
-.team-row .team-col .front-face img{
-    text-align: center;
-    border-radius: 10px;
-}
-.team-row .team-col .back-face{
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 20px 30px 50px rgba(0,0,0, 0.15);
+.team-row .team-col a:hover{
+    background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255,255,255, 0.15);
-    transform: rotateX(180deg);
-    /* backdrop-filter: blur(2px); */
 }
-.card:hover .innerbox{
-    transform: rotateX(-180deg);
+.team-row .team-col .fa{
+    font-size: 35px;
+    padding: 10px 25px;
+    color: var(--textcolor);
 }
-.team-row .team-col .back-face img{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    padding: 20px;
-    margin-left:0px;
-}
-.team-row .team-col .back-face h2{
-    font-size: 18px;
-    margin-top: -10px;  
-}
-.team-row .team-col .back-face h4{
-    font-size: 27px;
-}
-.team-row .team-col .back-face .icons{
-    margin-top: -5px;
-}
-.team-row .team-col .back-face .icons .fa{
-    font-size: 18px;
-    margin: 0 7px;
-    padding: 7px;
-    background-color: rgba(122, 116, 116, 0.3);
-    border-radius: 50%;
-    transition: all 0.5s ease-in-out;
-}
-.team-row .team-col .back-face .icons .fa:hover{
-    cursor: pointer;
-    transform: translateY(-8px);
-    color: var(--cyan);
+.fa-users{
+    font-size: 20px !important;
+    padding: 0 0 0 10px !important;
+    color: white !important;
 }
 @media (max-width:900px){
     .team-row{
@@ -643,13 +601,23 @@ input{
     padding: 12px;
     margin-bottom: 8px;
     border-radius: 10px;
-    border: 1px solid grey;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2) ;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 20px 30px 50px rgba(0,0,0, 0.15);
 }
 textarea{
     width: 80%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2) ;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 20px 30px 50px rgba(0,0,0, 0.15);
+}
+::placeholder{
+    color: white;
 }
 button{
     padding: 8px 10px;
@@ -658,6 +626,7 @@ button{
     width: 85%;
     border-radius: 10px;
     border: 1px solid grey;
+    color: white;
     background: linear-gradient(135deg, var(--grey),var(--cyan));
     transition: 1s ease-in-out;
 }
@@ -669,7 +638,7 @@ button:hover{
 }
 .fa-send{
     padding-left: 10px;
-    color: var(--textcolor);
+    color: white;
 }
 @media (max-width:900px){
     .contact
