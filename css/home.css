@@ -207,9 +207,12 @@ nav ul li a:hover{
         margin-left: -5px;
         margin-top: 5px;
     }
+    .home-content{
+        margin-left: -10px;
+    }
     .home-text{
         width: 280px;
-        margin: 70px 25px;
+        margin: 70px 20px;
     } 
     .home-text h1{
         font-size: 25px;
@@ -326,10 +329,11 @@ nav ul li a:hover{
         margin-left: 0px;
     }
 }
-@media (max-width:460px){
+@media (max-width:430px){
     .event-row .event-col{
         width: 240px;
         height: 240px;
+        margin: 20px 0px;
     }
     .event-row .event-col img{
         width: 240px;
@@ -750,13 +754,6 @@ hr{
     font-size: 15px;
     padding-right:50px;
 }
-/* .footer-col h4::after{
-    content: '';
-    width: 30px;
-    position:absolute;
-    height: 3px;
-    background-color: red;
-} */
 .footer-col ul{
     padding-top: 20px;
 }
@@ -842,5 +839,11 @@ hr{
 @media (max-width:460px){
     .footer-row{
         flex-direction: column;
+    }
+    .footer-row{
+        margin-left: 10px;
+    }
+    .underline{
+        width: 38%;
     }
 }
