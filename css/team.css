@@ -192,6 +192,7 @@ nav ul li a:hover{
     justify-content: center;
 }
 .front-face img{
+    width: 100%;
     text-align: center;
     border-radius: 10px;
 }
