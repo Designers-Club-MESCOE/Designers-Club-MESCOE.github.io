@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <!-- ---AOS Animation-- -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ---FONTAWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>About Us</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo" data-aos="fade-down">
+        <img src="../images/logo.png" />
+      </div>
+      <div class="navlinks" id="navLinks" data-aos="fade-down">
+        <i class="fa fa-bars" id="bars" onclick="showMenu()"></i>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="#events"  class="active">ABOUT</a></li>
+          <li><a href="about.html">EVENTS</a></li>
+          <li><a href="team.html">TEAM</a></li>
+        </ul>
+        <i class="fa fa-times" id="times" onclick="hideMenu()"></i>
+      </div>
+    </nav>
+
+    <!-- ----------------------------------------------------------------- -->
+    <section class="about">
+      <h1 data-aos="fade-down">Who are we?</h1>
+      <h4 data-aos="fade-down">Designer's Club is run by a group of students from M.E.S College of Engineering.
+        It is an interdisciplinary club that help's students develop their skills in the designing and coding field.
+        The club help's in making students ready for design-oriented career opportunities in the future.
+      </h4>
+      <div class="about-row">
+        <div class="about-col" data-aos="fade-right">
+          <h2><i class="fa fa-eye"></i>Vision</h2>
+          <p><i class="fa fa-check"></i>Creating awareness about the software.</p>
+          <p><i class="fa fa-check"></i>Getting hands-on practice on how to &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; tackle industrial problems.</p>
+          <p><i class="fa fa-check"></i>Boost your goals.</p>
+          <p><i class="fa fa-check"></i>Value addition to your resume.</p>
+        </div>
+        <div class="about-col" data-aos="fade-left">
+          <h2 ><i class="fa fa-bullseye"></i>Objectives</h2>
+          <p><i class="fa fa-check"></i>Making students used to the software &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;which are essential in the design industry.</p>
+          <p><i class="fa fa-check"></i>Creating awareness among the students &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;about career opportunities in design&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; industry.</p>
+          <p><i class="fa fa-check"></i>Empowering their digital marketing and &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;web designing related skills.</p>
+          <p><i class="fa fa-check"></i>Preparing students from scratch to &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;advanced level.</p>
+          <p><i class="fa fa-check"></i>Developing out of the box thinking skills, &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;problem solving skills and working &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;together with different disciplines.</p>
+        </div>
+      </div>
+      <div class="softwares">
+        <h2 >Softwares we teach</h2>
+        <div class="software-row" data-aos="fade-up">
+          <div class="software-col">
+            <img src="../images/1.png" alt="">
+            <h3>Solidworks</h3>
+          </div>
+          <div class="software-col">
+            <img src="../images/2.png" alt="">
+            <h3>Fusion-360</h3>
+          </div>
+          <div class="software-col">
+            <img src="../images/3.png" alt="">
+            <h3>Photoshop</h3>
+          </div>
+          <div class="software-col">
+            <img src="../images/4.png" alt="">
+            <h3>Python</h3>
+          </div>
+          <div class="software-col">
+            <img src="../images/5.png" alt="">
+            <h3>Figma</h3>
+          </div>
+          <div class="software-col">
+            <img src="../images/6.png" alt="">
+            <h3>MATLAB</h3>
+          </div>
+          <div class="software-col">
+            <img src="../images/7.png" alt="">
+            <h3>Arduino</h3>
+          </div>
+          <div class="software-col">
+            <img src="../images/8.png" alt="">
+            <h3>Digital Marketing</h3>
+          </div>
+          <div class="software-col">
+            <img src="../images/9.png" alt="">
+            <h3>Web Design</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- -----------------------FOOTER--------------------------------------------- -->
+    <section class="footer-section">
+      <footer>
+        <div class="footer-row">
+          <div class="footer-col">
+            <img src="../images/logo.png" />
+            <p>
+              Designer's Club is an interdisciplinary club that will help
+              students develop their skills in the designing and coding field.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>
+              Quick Links
+              <div class="underline"><span></span></div>
+            </h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>
+              Connect with us!
+              <div class="underline"><span></span></div>
+            </h4>
+            <div class="footer-icons">
+              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+              <a href=""><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <h4>
+              Email us!
+              <div class="underline-email"><span></span></div>
+            </h4>
+            <p>mescoedesignersclub@gmail.com</p>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          Copyright © 2021 | Made with <i class="fa fa-heart"></i> by
+          <b>Designer's Club</b>
+        </p>
+      </footer>
+    </section>
+
+
+
+
+    <!-- ---JAVASCRIPT----- -->
+    <script>
+      var bars = document.getElementById("bars");
+      var times = document.getElementById("times");
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.visibility = "visible";
+        bars.style.visibility = "hidden";
+        times.style.visibility = "visible";
+      }
+      function hideMenu() {
+        navLinks.style.visibility = "hidden";
+        bars.style.visibility = "visible";
+        times.style.visibility = "hidden";
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 3000,
+        easing: "ease",
+      });
+    </script>
+  </body>
 </html>
