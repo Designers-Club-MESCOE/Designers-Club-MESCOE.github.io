@@ -294,6 +294,41 @@ h3{
     align-items: center;
     flex-wrap: wrap;
 }
+@media (max-width:800px){
+    .team{
+        width: 90%;
+    }
+    .team-row{
+        flex-direction: column;
+    }
+    .programme-row{
+        flex-direction: column;
+    }
+    .treasurer-row{
+        flex-direction: column;
+    }
+    .department-row{
+        flex-direction: column;
+    }
+    .socialmedia-row{
+        flex-direction: column;
+    }
+    .marketing-row{
+        flex-direction: column;
+    }
+    .documentation-row{
+        flex-direction: column;
+    }
+
+}
+@media (max-width:460px){
+    .team-text h1{
+        font-size: 25px;
+    }
+    .team-text p{
+        font-size: 16px;
+    }
+}
 
 
 /* ---------------------FOOTER----------------------------------------------- */
