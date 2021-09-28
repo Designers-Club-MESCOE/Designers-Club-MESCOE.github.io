@@ -338,6 +338,12 @@ nav ul li a:hover{
         width: 240px;
         height: 150px;
     }
+    .events h1{
+        font-size: 23px;
+    }
+    .events h4{
+        font-size: 24px;
+    }
 }
 
 /* -----------ABOUT--------------------------------------------------------------------------------------- */
@@ -464,6 +470,12 @@ nav ul li a:hover{
         text-align: center;
         margin: auto;
     }
+    .about h1{
+        font-size: 23px;
+    }
+    .about h6{
+        font-size: 24px;
+    }
     .about-row .about-col img{
         height: 270px;
         width: 240px;
@@ -556,6 +568,32 @@ nav ul li a:hover{
     .team a{
         margin-left: 0px;
     }
+    .team-row .team-col{
+        flex-basis: 100%;
+    }
+}
+@media (max-width:430px){
+    .team{
+        width: 100%;
+    }
+    .team-row .team-col h3{
+        margin-top: 30px;
+        margin-right: 0px;
+        font-size: 16px;
+    }
+    .team-row .team-col a{
+        padding: 10px 15px;
+    }
+    .team-row .team-col img{
+        max-width: 200px;
+    }
+    .team h1{
+        font-size: 23px;
+    }
+    .team h4{
+        font-size: 24px;
+    }
+
 }
 /* ---------------CONTACT------------------------------------------------------------------ */
 .contact
@@ -658,6 +696,12 @@ button:hover{
     }
     .contact-col{
         flex-basis: 100%;
+    }
+    .contact h1{
+        font-size: 23px;
+    }
+    .contact h4{
+        font-size: 24px;
     }
     iframe{
         width: 250px;
