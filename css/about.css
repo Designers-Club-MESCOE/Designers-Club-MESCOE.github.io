@@ -283,6 +283,28 @@ nav ul li a:hover{
     .software-row{
         margin: auto 60px;
     }
+    .benefits-row{
+        flex-direction: column;
+    }
+    .benefits-row .benefit-col{
+        flex-basis: 100%;
+    }
+    .benefits-row .benefit-col h2{
+        margin: 10px 100px;
+    }
+    .benefits-row .benefit-col ul::before{
+        bottom: 9%;
+        left: 4%;
+        height: 64%;
+    }
+    .benefits-row .benefit-col ul li::before{
+        left: 3%;
+        z-index: 1;
+    }
+    .benefits-row .benefit-col ul li{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 @media (max-width:430px){
     .about h1{
@@ -307,6 +329,15 @@ nav ul li a:hover{
     }
     .software-row .software-col{
         flex-basis: 100%;
+    }
+    .benefits-row .benefit-col h2{
+        font-size: 22px;
+        margin: 10px 15px;
+    }
+    .benefits-row .benefit-col ul::before{
+        bottom: 9%;
+        left: 5%;
+        height: 73%;
     }
 }
 /* -------------------FOOTER-------------------------------------------------------- */
