@@ -16,10 +16,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: url(../images/bg1.png);
+    background: url(../images/bg6.png);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 250vh;
     width: 100%;
     align-items:center;
 }
@@ -29,7 +29,7 @@ body{
     width: 90%;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 30px auto;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(7px);
     box-shadow: 0 20px 50px rgba(0,0,0, 0.15);
     border-radius: 15px;
     border-left: 1px solid rgba(255,255,255, 0.2);
