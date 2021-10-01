@@ -16,10 +16,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: url(../images/bg1.png);
+    background: url(../images/bg5.png);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 250vh;
     width: 100%;
     align-items:center;
 }
