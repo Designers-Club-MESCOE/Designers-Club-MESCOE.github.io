@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Featured Events</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link id='favicon' rel="shortcut icon" href="https://ik.imagekit.io/DC/dclogo_H6IyKcZRptK?updatedAt=1633592336038" type="image/x-png">
+
+  <title>Designer's Club</title>
+  <link rel="stylesheet" href="../css/home.css" />
+  <!-- ---AOS Animation-- -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- ---FONTAWESOME CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
-  
+  <nav>
+    <div class="logo" data-aos="fade-down">
+      <img src="../images/logo.png" />
+    </div>
+    <div class="navlinks" id="navLinks" data-aos="fade-down">
+      <i class="fa fa-bars" id="bars" onclick="showMenu()"></i>
+      <ul>
+        <li><a href="home.html" class="active">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#">EVENTS</a></li>
+        <li><a href="team.html">TEAM</a></li>
+        <li><a href="home.html#contact">CONTACT</a></li>
+      </ul>
+      <i class="fa fa-times" id="times" onclick="hideMenu()"></i>
+    </div>
+  </nav>
+
+  <section class="events" id="events">
+    <h2 data-aos="fade-down">Upcoming Events</h2>
+    <div class="event-row" data-aos="fade-up">
+      <h3 class="no-event">No upcoming events yet. Stay tuned for more updates..</h3>
+      <!-- <div class="event-col">
+        <a href=""><img src="../images/event1.png" /></a>
+        <h2>Digital Marketing Webinar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="event-col">
+        <a href=""><img src="../images/event2.png" /></a>
+        <h2>Python Series</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="event-col">
+        <a href=""><img src="../images/event3.png" /></a>
+        <h2>Solidworks</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+    </div>
+    </div>
+
+    <h2 data-aos="fade-down">Past Events</h2>
+    <!-- <a href="" class="view">All Events<i class="fa fa-arrow-right"></i></a> -->
+    <div class="event-row" data-aos="fade-up">
+      <div class="event-col">
+        <a href=""><img src="../images/event1.png" /></a>
+        <h2>Digital Marketing Webinar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="event-col">
+        <a href=""><img src="../images/event2.png" /></a>
+        <h2>Python Series</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="event-col">
+        <a href=""><img src="../images/event3.png" /></a>
+        <h2>Solidworks</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ------FOOTER----------------- -->
+
+  <section class="footer-section">
+    <footer>
+      <div class="footer-row">
+        <div class="footer-col">
+          <img src="../images/logo.png" />
+          <p>
+            Designer's Club is an interdisciplinary club that will help
+            students develop their skills in the designing and coding field.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>
+            Quick Links
+            <div class="underline"><span></span></div>
+          </h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>
+            Connect with us!
+            <div class="underline"><span></span></div>
+          </h4>
+          <div class="footer-icons">
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-youtube-play"></i></a>
+          </div>
+          <h4>
+            Email us!
+            <div class="underline-email"><span></span></div>
+          </h4>
+          <p>mescoedesignersclub@gmail.com</p>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">
+        Copyright © 2021 | Made with <i class="fa fa-heart"></i> by
+        <b>Designer's Club</b>
+      </p>
+    </footer>
+  </section>
 </body>
+<!-- -----------JAVASCRIPT----------------- -->
+<script>
+  var bars = document.getElementById("bars");
+  var times = document.getElementById("times");
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.visibility = "visible";
+    bars.style.visibility = "hidden";
+    times.style.visibility = "visible";
+  }
+
+  function hideMenu() {
+    navLinks.style.visibility = "hidden";
+    bars.style.visibility = "visible";
+    times.style.visibility = "hidden";
+  }
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1500,
+    easing: "ease",
+  });
+</script>
+
 </html>
