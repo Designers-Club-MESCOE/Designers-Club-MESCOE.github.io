@@ -6,6 +6,8 @@
   --color2: #c7cb36;
   --grey: #566a6b;
   --cyan: #64d8de;
+  --purple: #9334B2;
+  --socialicons: #ffe0c0;
   --textcolor: rgb(34, 33, 33);
 }
 
@@ -51,7 +53,7 @@ nav {
   width: 180px;
   margin-left: -20px;
   margin-top: -10px;
-  transition: 1s;
+  transition: 0.3s ease-in-out;
 }
 
 .logo img:hover {
@@ -72,7 +74,7 @@ nav ul li a {
   text-decoration: none;
   color: var(--grey);
   font-size: 14px;
-  transition: 0.6s;
+  transition: 0.3s;
   font-weight: 500;
 }
 
@@ -128,13 +130,13 @@ nav ul li a:hover {
   padding: 7px;
   background-color: rgba(122, 116, 116, 0.3);
   border-radius: 50%;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .social-icons .fa:hover {
   cursor: pointer;
-  transform: translateY(-8px);
-  color: var(--cyan);
+  transform: translateY(-5px);
+  color: var(--socialicons);
 }
 
 .navlinks .fa {
@@ -320,7 +322,7 @@ nav ul li a:hover {
   margin-left: 930px;
   text-decoration: none;
   color: var(--grey);
-  transition: 0.8s;
+  transition: all 0.3s ease-in-out;
   background: linear-gradient(135deg, var(--grey), var(--cyan));
   padding: 8px 10px;
   color: white;
@@ -350,7 +352,7 @@ nav ul li a:hover {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   position: relative;
-  transition: 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .event-row .event-col:hover {
@@ -928,7 +930,7 @@ hr {
 .footer-col li a {
   text-decoration: none;
   color: var(--textcolor);
-  transition: 0.8s;
+  transition: 0.3s;
 }
 
 .footer-col li a:hover {
@@ -946,7 +948,7 @@ hr {
   margin-right: 10px;
   background-color: rgba(77, 73, 73, 0.2);
   border-radius: 10px;
-  transition: 0.7s ease-in-out;
+  transition: 0.3s ease-in-out;
   font-size: 16px;
 }
 
@@ -956,8 +958,8 @@ hr {
 
 .footer-icons .fa:hover {
   cursor: pointer;
-  transform: translateY(-8px);
-  color: var(--cyan);
+  transform: translateY(-5px);
+  color: var(--socialicons);
 }
 
 .underline {
