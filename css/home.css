@@ -6,9 +6,8 @@
   --color2: #c7cb36;
   --grey: #566a6b;
   --cyan: #64d8de;
-  --purple: #9334B2;
-  --socialicons: #ffe0c0;
   --textcolor: rgb(34, 33, 33);
+  --tagline:rgb(214, 214, 214);
 }
 
 * {
@@ -53,7 +52,7 @@ nav {
   width: 180px;
   margin-left: -20px;
   margin-top: -10px;
-  transition: 0.3s ease-in-out;
+  transition: 1s;
 }
 
 .logo img:hover {
@@ -74,7 +73,7 @@ nav ul li a {
   text-decoration: none;
   color: var(--grey);
   font-size: 14px;
-  transition: 0.3s;
+  transition: 0.6s;
   font-weight: 500;
 }
 
@@ -130,13 +129,13 @@ nav ul li a:hover {
   padding: 7px;
   background-color: rgba(122, 116, 116, 0.3);
   border-radius: 50%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .social-icons .fa:hover {
   cursor: pointer;
-  transform: translateY(-5px);
-  color: var(--socialicons);
+  transform: translateY(-8px);
+  color: white;
 }
 
 .navlinks .fa {
@@ -165,7 +164,7 @@ nav ul li a:hover {
   .fa-bars {
     visibility: visible;
     position: absolute;
-    padding: 5%;
+    padding-top: 8%;
     right: 5%;
     cursor: pointer;
   }
@@ -246,7 +245,9 @@ nav ul li a:hover {
     margin-left: -5px;
     margin-top: 5px;
   }
-
+  .social-icons {
+    padding-top: 10px;
+  }
   .home-content {
     margin-left: -10px;
   }
@@ -308,22 +309,23 @@ nav ul li a:hover {
   font-size: 25px;
   margin-bottom: 5px;
   margin-top: 100px;
+  color: white;
 }
 
 .events h4 {
   font-family: 'Cookie', cursive;
   font-weight: 400;
   font-size: 30px;
-  color: var(--textcolor);
+  color: var(--tagline);
   margin-bottom: 30px;
 }
 
 .events .view {
-  margin-left: 930px;
+  margin-left: 900px;
   text-decoration: none;
   color: var(--grey);
-  transition: all 0.3s ease-in-out;
-  background: linear-gradient(135deg, var(--grey), var(--cyan));
+  transition: 0.8s;
+  background: linear-gradient(135deg, rgb(245, 125, 45),rgb(231, 118, 137));
   padding: 8px 10px;
   color: white;
   border-radius: 10px;
@@ -331,7 +333,8 @@ nav ul li a:hover {
 }
 
 .events a:hover {
-  color: var(--textcolor);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .event-row {
@@ -352,7 +355,7 @@ nav ul li a:hover {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   position: relative;
-  transition: all 0.3s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .event-row .event-col:hover {
@@ -364,10 +367,12 @@ nav ul li a:hover {
   font-size: 18px;
   margin-top: 15px;
   margin-bottom: 5px;
+  color:var(--tagline);
 }
 
 .event-row .event-col p {
   font-size: 14px;
+  color:var(--tagline);
 }
 
 .event-row .event-col img {
@@ -478,12 +483,12 @@ nav ul li a:hover {
 }
 
 .about-row .about-col a {
-  background: linear-gradient(135deg, var(--grey), var(--cyan));
+  background: linear-gradient(135deg, rgb(245, 125, 45),rgb(231, 118, 137));
   text-decoration: none;
   width: 40%;
-  color: black;
+  color: white;
   padding: 7px 10px;
-  border: 1px solid var(--grey);
+  border: 1px solid rgb(245, 141, 159);
   border-radius: 10px;
   font-size: 15px;
   transition: 1s ease-in-out;
@@ -549,13 +554,13 @@ nav ul li a:hover {
   }
 
   .about-row .about-col img {
-    margin-left: 120px;
+    margin-left: 140px;
   }
 
   .about-row .about-col h3,
   .about-row .about-col h5,
   .about-row .about-col .desc {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -596,13 +601,14 @@ nav ul li a:hover {
   font-size: 25px;
   margin-bottom: 5px;
   margin-top: 80px;
+  color: white;
 }
 
 .team h4 {
   font-family: 'Cookie', cursive;
   font-weight: 400;
   font-size: 30px;
-  color: var(--textcolor);
+  color: var(--tagline);
   margin-bottom: 20px;
 }
 
@@ -639,6 +645,7 @@ nav ul li a:hover {
   margin-top: 80px;
   margin-bottom: 50px;
   margin-right: 50px;
+  color: var(--tagline);
 }
 
 .team-row .team-col a {
@@ -646,7 +653,7 @@ nav ul li a:hover {
   color: var(--grey);
   border: 1px solid var(--grey);
   transition: 0.8s;
-  background: linear-gradient(135deg, var(--grey), var(--cyan));
+  background: linear-gradient(135deg, rgb(245, 125, 45),rgb(231, 118, 137));
   padding: 10px 35px;
   color: white;
   border-radius: 10px;
@@ -663,7 +670,7 @@ nav ul li a:hover {
 .team-row .team-col .fa {
   font-size: 35px;
   padding: 10px 25px;
-  color: var(--textcolor);
+  color: white;
 }
 
 .fa-users {
@@ -725,13 +732,14 @@ nav ul li a:hover {
   font-size: 25px;
   margin-bottom: 5px;
   margin-top: 80px;
+  color: white;
 }
 
 .contact h4 {
   font-family: 'Cookie', cursive;
   font-weight: 400;
   font-size: 30px;
-  color: var(--textcolor);
+  color: var(--tagline);
   margin-bottom: 30px;
 }
 
@@ -794,7 +802,7 @@ button {
   border-radius: 10px;
   border: 1px solid grey;
   color: white;
-  background: linear-gradient(135deg, var(--grey), var(--cyan));
+  background: linear-gradient(135deg, rgb(245, 125, 45),rgb(231, 118, 137));
   transition: 1s ease-in-out;
 }
 
@@ -870,7 +878,9 @@ button:hover {
   backdrop-filter: blur(8px);
   margin-top: 80px;
 }
-
+.footer-section h4{
+  color: white;
+}
 footer {
   width: 80%;
   margin: auto;
@@ -882,7 +892,7 @@ footer {
 }
 
 hr {
-  border: 1px solid var(--textcolor);
+  border: 1px solid var(--tagline);
 }
 
 .fa-heart {
@@ -916,6 +926,7 @@ hr {
   margin-top: 15px;
   font-size: 15px;
   padding-right: 50px;
+  color: var(--tagline);
 }
 
 .footer-col ul {
@@ -929,12 +940,12 @@ hr {
 
 .footer-col li a {
   text-decoration: none;
-  color: var(--textcolor);
-  transition: 0.3s;
+  color: var(--tagline);
+  transition: 0.8s;
 }
 
 .footer-col li a:hover {
-  color: black;
+  color: rgb(230, 119, 28);
 }
 
 .footer-icons {
@@ -948,20 +959,22 @@ hr {
   margin-right: 10px;
   background-color: rgba(77, 73, 73, 0.2);
   border-radius: 10px;
-  transition: 0.3s ease-in-out;
+  transition: 0.7s ease-in-out;
   font-size: 16px;
 }
 
 .footer-icons a {
-  color: black;
+  color: white;
 }
 
 .footer-icons .fa:hover {
   cursor: pointer;
-  transform: translateY(-5px);
-  color: var(--socialicons);
+  transform: translateY(-8px);
+  color: rgb(230, 119, 28);
 }
-
+.copyright{
+  color: var(--tagline);
+}
 .underline {
   width: 45%;
   height: 5px;
