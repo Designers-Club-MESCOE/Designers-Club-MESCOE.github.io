@@ -356,6 +356,10 @@ hr{
     animation: footerline 2s linear infinite;
 }
 
+footer a{
+  text-decoration: none;  
+}
+
 @keyframes footerline{
     0%{
         left: -20px;
