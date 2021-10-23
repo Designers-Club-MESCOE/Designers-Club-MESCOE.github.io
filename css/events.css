@@ -145,9 +145,10 @@ nav ul li a:hover{
     margin: auto;
 }
 .events h2{
-    font-size: 22px;
+    font-size: 23px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 100px;
+    margin-bottom: 30px;
     color: white;
 }
 .no-event{
@@ -156,6 +157,83 @@ nav ul li a:hover{
     font-size: 18px;
     color: var(--tagline);
 }
+/* ------------------------------------------------------------------------------------ */
+.upevent-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+.upevent-row .upevent-col {
+    display: flex;
+    width: 1000px;
+    height: 280px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px 25px;
+    box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    transition: 1s ease-in-out;
+  }
+  .content{
+      margin-left: 30px;
+  }
+  .upevent-col:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+  
+  .upevent-col h2 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color:white;
+    text-align: left;
+  }
+  .upevent-col h4 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color:var(--tagline);
+    text-align: left;
+    font-weight: 400;
+  }
+  .upevent-col p {
+    font-size: 14px;
+    color:white;
+    text-align: left;
+    padding-top: 5px;
+  }
+  
+  .upevent-col img {
+    width: 300px;
+    height: 280px;
+    border-radius: 10px;
+  }
+  .btns {
+      text-align: left;
+      margin-top: 15px;
+      display: flex;
+  }
+  .btns a{
+      text-decoration: none;
+      color: white;
+      padding: 6px 30px;
+      margin-right: 10px;
+      background-color: #243157;
+      border-radius: 5px;
+      border: 1px solid #243157;
+      transition: 0.5s;
+  }
+  .btns a:hover{
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+/* ------------------------------------------------------------------------------------ */
 .event-row {
     display: flex;
     justify-content: space-around;
@@ -183,7 +261,7 @@ nav ul li a:hover{
   }
   
   .event-row .event-col h2 {
-    font-size: 18px;
+    font-size: 19px;
     margin-top: 15px;
     margin-bottom: 5px;
     color:var(--tagline);
@@ -215,6 +293,11 @@ nav ul li a:hover{
     .events .view {
       margin-left: 0px;
     }
+    .upevent-row .upevent-col{
+        width: 650px;
+        height: 350px;
+        margin: 20px 0px;
+    }
   }
   
   @media (max-width:430px) {
@@ -229,12 +312,34 @@ nav ul li a:hover{
       height: 150px;
     }
   
-    .events h1 {
-      font-size: 23px;
+    .events h2 {
+      font-size: 21px;
     }
   
     .events h4 {
       font-size: 24px;
+    }
+    .event-row .event-col h2{
+        font-size: 18px;
+    }
+    .upevent-row .upevent-col{
+        width: 300px;
+        height: 670px;
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+    .upevent-col h4 {
+        font-size: 13px;
+    }
+    .content{
+        margin-left: 20px;
+    }
+    .btns{
+        flex-direction: column;
+        width: 60%;
+    }
+    .btns a{
+        margin-top: 8px;
     }
   }
   
@@ -356,10 +461,6 @@ hr{
     animation: footerline 2s linear infinite;
 }
 
-footer a{
-  text-decoration: none;  
-}
-
 @keyframes footerline{
     0%{
         left: -20px;
@@ -385,4 +486,3 @@ footer a{
         width: 38%;
     }
 }
-
