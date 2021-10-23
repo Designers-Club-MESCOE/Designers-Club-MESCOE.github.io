@@ -7,7 +7,7 @@
   --grey: #566a6b;
   --cyan: #64d8de;
   --textcolor: rgb(34, 33, 33);
-  --tagline:rgb(214, 214, 214);
+  --tagline: rgb(214, 214, 214);
 }
 
 * {
@@ -85,16 +85,24 @@ nav ul li a:hover {
 
 .home-content {
   display: flex;
+  justify-content: space-around;
 }
 
 .image img {
-  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
 }
 
 .home-text {
+  display: flex;
   color: var(--textcolor);
   width: 500px;
   margin: 70px 70px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .home-text h1 {
@@ -116,7 +124,7 @@ nav ul li a:hover {
 }
 
 .social-icons {
-  margin: 0px 70px;
+  margin: 20px 0px;
 }
 
 .social-icons a {
@@ -246,9 +254,11 @@ nav ul li a:hover {
     margin-left: -5px;
     margin-top: 5px;
   }
+
   .social-icons {
     padding-top: 10px;
   }
+
   .home-content {
     margin-left: -10px;
   }
@@ -326,7 +336,7 @@ nav ul li a:hover {
   text-decoration: none;
   color: var(--grey);
   transition: 0.8s;
-  background: linear-gradient(135deg, rgb(245, 125, 45),rgb(231, 118, 137));
+  background: linear-gradient(135deg, rgb(245, 125, 45), rgb(231, 118, 137));
   padding: 8px 10px;
   color: white;
   border-radius: 10px;
@@ -368,12 +378,12 @@ nav ul li a:hover {
   font-size: 18px;
   margin-top: 15px;
   margin-bottom: 5px;
-  color:var(--tagline);
+  color: var(--tagline);
 }
 
 .event-row .event-col p {
   font-size: 14px;
-  color:var(--tagline);
+  color: var(--tagline);
 }
 
 .event-row .event-col img {
@@ -484,7 +494,7 @@ nav ul li a:hover {
 }
 
 .about-row .about-col a {
-  background: linear-gradient(135deg, rgb(245, 125, 45),rgb(231, 118, 137));
+  background: linear-gradient(135deg, rgb(245, 125, 45), rgb(231, 118, 137));
   text-decoration: none;
   width: 40%;
   color: white;
@@ -654,7 +664,7 @@ nav ul li a:hover {
   color: var(--grey);
   border: 1px solid var(--grey);
   transition: 0.8s;
-  background: linear-gradient(135deg, rgb(245, 125, 45),rgb(231, 118, 137));
+  background: linear-gradient(135deg, rgb(245, 125, 45), rgb(231, 118, 137));
   padding: 10px 35px;
   color: white;
   border-radius: 10px;
@@ -803,7 +813,7 @@ button {
   border-radius: 10px;
   border: 1px solid grey;
   color: white;
-  background: linear-gradient(135deg, rgb(245, 125, 45),rgb(231, 118, 137));
+  background: linear-gradient(135deg, rgb(245, 125, 45), rgb(231, 118, 137));
   transition: 1s ease-in-out;
 }
 
@@ -879,9 +889,11 @@ button:hover {
   backdrop-filter: blur(8px);
   margin-top: 80px;
 }
-.footer-section h4{
+
+.footer-section h4 {
   color: white;
 }
+
 footer {
   width: 80%;
   margin: auto;
@@ -973,9 +985,11 @@ hr {
   transform: translateY(-8px);
   color: rgb(230, 119, 28);
 }
-.copyright{
+
+.copyright {
   color: var(--tagline);
 }
+
 .underline {
   width: 45%;
   height: 5px;
@@ -1010,8 +1024,8 @@ hr {
   animation: footerline 2s linear infinite;
 }
 
-footer a{
-  text-decoration: none;  
+footer a {
+  text-decoration: none;
 }
 
 @keyframes footerline {
