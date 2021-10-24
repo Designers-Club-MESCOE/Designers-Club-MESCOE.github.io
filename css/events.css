@@ -30,7 +30,9 @@
     --textcolor: rgb(34, 33, 33);
     --tagline: rgb(214, 214, 214);
 }
-
+a{
+    text-decoration: none;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -311,31 +313,33 @@ nav ul li a:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 120px;
-    transition: 0.2s;
+    height: 100px;
     font-size: 20px;
     color: black;
     overflow: hidden;
     border-radius: 5px;
     padding-bottom: 10px;
-    text-align: justify;
+    text-align: left;
+    transition: 0.5s ease-in-out;
 }
 
 .event-row .event-col .EC p {
     margin-left: 10px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    padding: 0 10px;
 }
 
 .event-row .event-col .EC:hover {
-    height: 150px;
-    background-color: rgb(111, 2, 121);
+    cursor: pointer;
+    height: fit-content;
+    background-color: rgb(33, 56, 104);
 }
 
 
-/*.event-row .event-col:hover {
-  transform: scale(0.9);
-  cursor: pointer;
-}*/
+.event-row .event-col:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+}
 
 .event-row .event-col h2 {
     font-size: 19px;

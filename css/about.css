@@ -29,7 +29,9 @@
   --textcolor: rgb(34, 33, 33);
   --tagline:rgb(214, 214, 214);
 }
-
+a{
+  text-decoration: none;
+}
 * {
   margin: 0;
   padding: 0;
